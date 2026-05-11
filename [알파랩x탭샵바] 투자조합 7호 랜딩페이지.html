@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSB THE NEXT — 탭샵바 비즈니스 세미나 & 사업 참여 설명회 | 5.28-29</title>
+<meta name="description" content="알파랩 × 탭샵바가 함께하는 외식 투자 세미나. 3년 만에 매출 95억, 와인계의 스타벅스를 꿈꾸는 탭샵바의 다음 스테이지에 함께하세요. 5월 28-29일, 도산대로점.">
+<meta property="og:title" content="TSB THE NEXT — 탭샵바 비즈니스 세미나">
+<meta property="og:description" content="알파랩이 탭샵바에 투자하는 이유. 5월 28-29일, 도산대로점.">
+<meta property="og:image" content="poster_hero_final.jpg">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-soft: #141414;
+    --bg-elevated: #1c1c1c;
+    --ink: #ffffff;
+    --ink-muted: rgba(255,255,255,0.65);
+    --ink-faint: rgba(255,255,255,0.4);
+    --rule: rgba(255,255,255,0.1);
+    --accent: #f5b800;       /* TSB 옐로 */
+    --accent-soft: #fbd96a;
+    --alpha-blue: #25b2ff;   /* 알파랩 블루 */
+    --wine: #8b1e2d;
+    --container: 1180px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  .display { font-family: 'Bebas Neue', 'Pretendard Variable', sans-serif; letter-spacing: 0.02em; }
+  .mono { font-family: 'JetBrains Mono', monospace; letter-spacing: 0; }
+
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 32px; }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ============ NAV ============ */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 18px 32px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(10,10,10,0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px; letter-spacing: 0.08em;
+  }
+  .nav-brand .x { color: var(--ink-faint); font-weight: 300; }
+  .nav-brand img { height: 22px; opacity: 0.9; }
+  .nav-cta {
+    padding: 10px 22px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 100px;
+    font-size: 13px; font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245, 184, 0, 0.3); }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex; align-items: center;
+    overflow: hidden;
+    padding: 140px 0 80px;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('poster_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    filter: blur(0px);
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.85) 70%, rgba(10,10,10,1) 100%);
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    width: 100%;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 18px;
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+  .hero-tag .dot {
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  .hero-quote {
+    font-size: 18px;
+    color: var(--ink-muted);
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(72px, 12vw, 180px);
+    line-height: 0.88;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+    margin-bottom: 28px;
+    text-shadow: 0 4px 60px rgba(245, 184, 0, 0.2);
+  }
+  .hero-sub {
+    font-size: clamp(18px, 2.4vw, 26px);
+    font-weight: 400;
+    margin-bottom: 56px;
+    max-width: 640px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  /* COUNTDOWN */
+  .countdown {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .countdown-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+  .countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 64px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .countdown-unit .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+  .countdown-unit .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-top: 6px;
+    letter-spacing: 0.1em;
+  }
+  .countdown-sep {
+    color: var(--ink-faint);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    align-self: flex-start;
+    padding-top: 16px;
+  }
+  .countdown.is-live .countdown-unit { border-color: rgba(245,184,0,0.3); }
+  .countdown-finished {
+    padding: 12px 18px;
+    background: rgba(245,184,0,0.08);
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    font-size: 13px;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 720px;
+    padding-top: 40px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero-meta-item .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 8px;
+  }
+  .hero-meta-item .value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+  }
+  .hero-meta-item .sub {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+  .hero-actions {
+    margin-top: 48px;
+    display: flex; gap: 16px; flex-wrap: wrap;
+  }
+  .btn-primary {
+    padding: 18px 36px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 10px;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(245, 184, 0, 0.35); }
+  .btn-primary svg { width: 16px; height: 16px; }
+  .btn-secondary {
+    padding: 18px 36px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--ink);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.5); }
+
+  /* ============ SECTION COMMON ============ */
+  section { padding: 120px 0; position: relative; }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-tag::before {
+    content: ''; display: block;
+    width: 32px; height: 1px;
+    background: var(--accent);
+  }
+  .section-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+  }
+  .section-title .accent { color: var(--accent); }
+  .section-lead {
+    font-size: 19px;
+    color: var(--ink-muted);
+    max-width: 720px;
+    line-height: 1.65;
+  }
+
+  /* ============ WHY SECTION ============ */
+  .why {
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 72px;
+  }
+  .why-card {
+    padding: 40px 36px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .why-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 0;
+    background: var(--accent);
+    transition: height 0.3s;
+  }
+  .why-card:hover { border-color: rgba(245,184,0,0.3); transform: translateY(-4px); }
+  .why-card:hover::before { height: 100%; }
+  .why-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+  }
+  .why-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+  .why-card p {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ============ TRACK RECORD ============ */
+  .track {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .track-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 64px;
+    border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+  }
+  .track-item {
+    padding: 40px 32px;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .track-item .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .track-item .num .unit {
+    font-size: 20px;
+    color: var(--ink-muted);
+    margin-left: 4px;
+  }
+  .track-item .label {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+  .track-history {
+    margin-top: 80px;
+    padding: 40px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .track-history h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 28px;
+  }
+  .timeline {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px 32px;
+  }
+  .timeline-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 700;
+    padding-top: 2px;
+  }
+  .timeline-event {
+    color: var(--ink-muted);
+    font-size: 15px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 18px;
+  }
+  .timeline-year:last-of-type + .timeline-event { border-bottom: none; padding-bottom: 0; }
+
+  /* ============ PROGRAM ============ */
+  .program-intro {
+    margin-bottom: 64px;
+  }
+  .session-list {
+    display: flex; flex-direction: column;
+    gap: 24px;
+  }
+  .session {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px;
+    gap: 32px;
+    align-items: start;
+    padding: 32px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  .session:hover { border-color: rgba(245,184,0,0.3); }
+  .session-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+  }
+  .session-num .big {
+    display: block;
+    font-size: 48px;
+    color: var(--ink);
+    line-height: 1;
+    margin-top: 6px;
+  }
+  .session-body h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .session-body .speaker {
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+  .session-body p {
+    font-size: 15px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+  .session-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-align: right;
+    letter-spacing: 0.05em;
+  }
+  .session-time .duration {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  /* ============ PROGRAM TIMELINE ============ */
+  .program-intro { margin-bottom: 64px; }
+
+  .program-timeline {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .timeline-row {
+    display: grid;
+    grid-template-columns: 130px 1px 1fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    transition: background 0.3s;
+  }
+  .timeline-row:first-child { border-top: 2px solid var(--ink); padding-top: 36px; }
+  .timeline-row:hover { background: rgba(245, 184, 0, 0.02); }
+
+  .timeline-row.featured {
+    background: linear-gradient(180deg, rgba(245,184,0,0.06) 0%, rgba(245,184,0,0.02) 100%);
+    border: 1px solid rgba(245, 184, 0, 0.25);
+    border-radius: 4px;
+    padding: 36px 32px;
+    margin: 16px 0;
+  }
+  .timeline-row.featured + .timeline-row { border-top: 1px solid var(--rule); }
+
+  .t-time { text-align: right; padding-top: 4px; }
+  .time-num {
+    font-size: 38px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .time-dur {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.15em;
+    margin-top: 10px;
+  }
+
+  .t-rule {
+    background: var(--rule);
+    width: 1px;
+    align-self: stretch;
+  }
+  .timeline-row.featured .t-rule { background: rgba(245, 184, 0, 0.3); }
+
+  .t-body { padding-top: 4px; }
+
+  .t-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .t-badge {
+    display: inline-block;
+    padding: 3px 9px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 100px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+
+  .t-body h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.35;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .t-presenter {
+    font-size: 13px;
+    color: var(--ink-faint);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .t-desc {
+    font-size: 14.5px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    max-width: 680px;
+  }
+
+  .timeline-end {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 28px 0 0;
+    border-top: 2px solid var(--ink);
+    margin-top: -1px;
+  }
+  .timeline-end .end-time {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+  .timeline-end .end-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.2em;
+  }
+
+  /* ============ INVESTMENT ============ */
+  .invest {
+    background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+  }
+  .invest-headline {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .invest-numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+  .invest-num {
+    text-align: center;
+    padding: 36px 24px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .invest-num.highlight {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, rgba(245,184,0,0.08) 0%, var(--bg-elevated) 100%);
+  }
+  .invest-num .figure {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .invest-num .figure .unit { font-size: 20px; color: var(--ink-muted); margin-left: 2px; }
+  .invest-num .label {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-top: 12px;
+    letter-spacing: 0.02em;
+  }
+  .invest-progress {
+    max-width: 680px;
+    margin: 0 auto 64px;
+    padding: 32px 36px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+  }
+  .invest-progress-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 16px;
+  }
+  .invest-progress-header .title {
+    font-size: 14px;
+    color: var(--ink-muted);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+  }
+  .invest-progress-header .pct {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--accent);
+  }
+  .progress-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-soft) 100%);
+    border-radius: 100px;
+    transition: width 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .invest-progress-detail {
+    display: flex; justify-content: space-between;
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+  .invest-progress-detail strong { color: var(--ink); font-weight: 600; }
+  .invest-terms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .invest-term {
+    padding: 28px 24px;
+    border-right: 1px solid var(--rule);
+    text-align: center;
+  }
+  .invest-term:last-child { border-right: none; }
+  .invest-term .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .invest-term .value {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .invest-term .value .accent { color: var(--accent); font-family: 'Bebas Neue', sans-serif; font-size: 26px; }
+
+  /* ============ DETAILS / SCHEDULE ============ */
+  .details {
+    background: var(--bg);
+  }
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    margin-top: 64px;
+    align-items: start;
+  }
+  .detail-block {
+    padding: 36px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .detail-block h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .schedule-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .schedule-row:last-child { border-bottom: none; }
+  .schedule-row .day {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding-top: 4px;
+  }
+  .schedule-row .day .sub { display: block; font-size: 11px; color: var(--ink-muted); letter-spacing: 0.1em; margin-top: 4px; }
+  .schedule-row .info .session-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    background: rgba(245,184,0,0.1);
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-right: 8px;
+    letter-spacing: 0.05em;
+  }
+  .schedule-row .info .time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .schedule-row .info p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+  .venue-info {
+    margin-top: 16px;
+  }
+  .venue-info p { color: var(--ink-muted); margin-bottom: 8px; font-size: 14px; }
+  .venue-info .name { color: var(--ink); font-weight: 600; font-size: 17px; margin-bottom: 4px; }
+  .venue-info .addr { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-muted); }
+  .venue-map {
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    aspect-ratio: 16 / 10;
+    background: #1a1a1a;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .venue-map:hover {
+    border-color: rgba(245, 184, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  .venue-map svg, .venue-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .map-overlay-cta {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 14px;
+    background: rgba(10, 10, 10, 0.85);
+    border: 1px solid rgba(245, 184, 0, 0.5);
+    border-radius: 100px;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s;
+  }
+  .venue-map:hover .map-overlay-cta {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+  }
+  .venue-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+  .venue-map-link:hover { text-decoration: underline; }
+  .audience-list {
+    list-style: none;
+    margin-top: 8px;
+  }
+  .audience-list li {
+    padding: 10px 0;
+    color: var(--ink-muted);
+    font-size: 14px;
+    border-bottom: 1px dashed var(--rule);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .audience-list li:last-child { border-bottom: none; }
+  .audience-list li::before {
+    content: '◆';
+    color: var(--accent);
+    font-size: 10px;
+  }
+
+  /* ============ APPLY ============ */
+  .apply {
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+    text-align: center;
+  }
+  .apply-headline { margin-bottom: 56px; }
+  .apply-form-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .apply-form-wrap iframe {
+    width: 100%;
+    min-height: 700px;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .apply-placeholder {
+    padding: 60px 32px;
+    border: 1px dashed rgba(255,255,255,0.2);
+    border-radius: 4px;
+    color: var(--ink-muted);
+  }
+  .apply-placeholder .icon {
+    font-size: 32px; color: var(--accent); margin-bottom: 16px;
+  }
+  .apply-alt {
+    margin-top: 32px;
+    color: var(--ink-muted);
+    font-size: 14px;
+  }
+  .apply-alt a {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--rule);
+    padding: 64px 0 40px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .footer-org h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+  }
+  .footer-org-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .footer-org p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 4px;
+  }
+  .footer-org a { color: var(--ink-muted); }
+  .footer-org a:hover { color: var(--accent); }
+  .footer-disclaimer {
+    font-size: 11px;
+    color: var(--ink-faint);
+    line-height: 1.7;
+    max-width: 920px;
+    margin-bottom: 24px;
+  }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px;
+    color: var(--ink-faint);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* ============ FLOATING CTA ============ */
+  .floating-cta {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    z-index: 50;
+    padding: 16px 24px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 8px 32px rgba(245,184,0,0.4);
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+  }
+  .floating-cta.visible {
+    opacity: 1; transform: translateY(0); pointer-events: auto;
+  }
+  .floating-cta:hover { transform: translateY(-2px); }
+
+  /* ============ REVEAL ============ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .container { padding: 0 24px; }
+    .nav { padding: 14px 20px; }
+    .nav-brand { font-size: 14px; gap: 8px; }
+    .nav-brand img { height: 18px; }
+    .nav-cta { padding: 8px 16px; font-size: 12px; }
+
+    section { padding: 80px 0; }
+
+    .hero { padding: 120px 0 60px; min-height: auto; }
+    .hero-meta { grid-template-columns: 1fr; gap: 20px; }
+
+    .countdown { gap: 8px; }
+    .countdown-unit { min-width: 54px; padding: 10px 10px; }
+    .countdown-unit .num { font-size: 26px; }
+    .countdown-sep { font-size: 22px; padding-top: 14px; }
+    .countdown-label { width: 100%; margin-bottom: 4px; }
+
+    .why-grid { grid-template-columns: 1fr; gap: 16px; }
+    .why-card { padding: 28px 24px; }
+
+    .track-grid { grid-template-columns: repeat(2, 1fr); }
+    .track-item { padding: 28px 20px; }
+    .track-item .num { font-size: 40px; }
+    .track-history { padding: 28px 20px; }
+    .timeline { grid-template-columns: 60px 1fr; gap: 16px 20px; }
+
+    .session { grid-template-columns: 1fr; gap: 16px; padding: 24px; }
+    .session-num .big { font-size: 36px; }
+    .session-time { text-align: left; }
+
+    .timeline-row {
+      grid-template-columns: 80px 1px 1fr;
+      gap: 16px;
+      padding: 24px 0;
+    }
+    .timeline-row.featured { padding: 24px 16px; margin: 12px 0; }
+    .time-num { font-size: 26px; }
+    .time-dur { font-size: 10px; margin-top: 8px; }
+    .t-body h3 { font-size: 18px; }
+    .t-meta { font-size: 10px; flex-wrap: wrap; }
+    .timeline-end .end-time { font-size: 24px; }
+
+    .invest-numbers { grid-template-columns: repeat(2, 1fr); }
+    .invest-num { padding: 24px 16px; }
+    .invest-num .figure { font-size: 40px; }
+    .invest-progress { padding: 24px; }
+    .invest-terms { grid-template-columns: 1fr; }
+    .invest-term { border-right: none; border-bottom: 1px solid var(--rule); }
+    .invest-term:last-child { border-bottom: none; }
+
+    .details-grid { grid-template-columns: 1fr; gap: 24px; }
+    .detail-block { padding: 28px 24px; }
+
+    .apply-form-wrap { padding: 28px 20px; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+
+    .floating-cta { bottom: 16px; right: 16px; padding: 14px 20px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <img src="alpha_logo_small.png" alt="alpha.lab"> <span class="x">×</span> <span style="color: var(--accent);">TSB</span>
+  </div>
+  <a href="#apply" class="nav-cta">신청하기</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-tag reveal">
+      <span class="dot"></span>
+      <span>2026.05.28 — 05.29 / 도산대로점</span>
+    </div>
+    <p class="hero-quote reveal">"알파랩이 탭샵바에 투자하는 이유"</p>
+    <h1 class="hero-title reveal display">TSB<br>THE NEXT</h1>
+    <p class="hero-sub reveal">
+      탭샵바 비즈니스 세미나 &amp; 사업 참여 설명회<br>
+      <span style="color: var(--ink-muted); font-size: 0.85em;">외식업의 다음 10년, AI가 결정합니다.</span>
+    </p>
+    <div class="countdown reveal" id="countdown">
+      <span class="countdown-label">D-DAY</span>
+      <div class="countdown-unit">
+        <span class="num" id="cdDays">--</span>
+        <span class="lbl">DAYS</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="num" id="cdHours">--</span>
+        <span class="lbl">HOURS</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="num" id="cdMinutes">--</span>
+        <span class="lbl">MIN</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="num" id="cdSeconds">--</span>
+        <span class="lbl">SEC</span>
+      </div>
+    </div>
+
+    <div class="hero-meta reveal">
+      <div class="hero-meta-item">
+        <div class="label">DATE</div>
+        <div class="value">MAY 28 — 29</div>
+        <div class="sub">2026 / 양일 진행</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">VENUE</div>
+        <div class="value">DOSAN</div>
+        <div class="sub">탭샵바 도산대로점</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">SEATS</div>
+        <div class="value">50 SEATS</div>
+        <div class="sub">양일 각 25명 한정</div>
+      </div>
+    </div>
+    <div class="hero-actions reveal">
+      <a href="#apply" class="btn-primary">
+        세미나 신청하기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#program" class="btn-secondary">프로그램 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-tag reveal">WHY THIS SEMINAR</div>
+    <h2 class="section-title reveal">
+      사람의 감에 의존하던 외식업이<br>
+      <span class="accent">바뀌고 있습니다.</span>
+    </h2>
+    <p class="section-lead reveal">
+      데이터로 매장을 운영하고, AI로 고객을 잡고, 기술로 수익 구조를 설계하는 시대.
+      그 최전선에 있는 브랜드와 투자사의 이야기를 직접 들어보세요.
+    </p>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num display">01</div>
+        <h3>왜 지금, 와인인가</h3>
+        <p>
+          한국 와인 시장은 2030년 3조 원 규모로 성장 전망. ProWein 선정 세계에서
+          두 번째로 매력적인 성장 시장입니다. 커피가 일상이 된 것처럼,
+          와인도 일상이 되는 변곡점에 들어섰습니다.
+        </p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num display">02</div>
+        <h3>왜 탭샵바인가</h3>
+        <p>
+          80종 와인 테이스팅 탭, 1,000종 큐레이션, IoT 디스펜서와 ERP 통합 솔루션.
+          오프라인 경험과 온라인 데이터가 선순환하는 국내 유일의 와인 O2O 플랫폼.
+        </p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num display">03</div>
+        <h3>왜 알파랩인가</h3>
+        <p>
+          국내 최초 휴미락(F&amp;B·Hospitality·Tourism) 전문 액셀러레이터.
+          43개 투자 기업, 652억 원 총 기업 가치, 평균 18% 투자 수익률을 기록한
+          매니지먼트 중심의 투자사입니다.
+        </p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num display">04</div>
+        <h3>왜 지금 참여하는가</h3>
+        <p>
+          2026년 신규 7개 매장 오픈 예정 (목표 매출 251억). 미국 뉴욕 맨하탄
+          진출이 진행 중. 이번 라운드는 글로벌 확장 직전에 합류할 수 있는
+          마지막 단계의 기회입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section class="track" id="track">
+  <div class="container">
+    <div class="section-tag reveal">TRACK RECORD</div>
+    <h2 class="section-title reveal">
+      3년, <span class="accent">370%+</span> 성장.<br>
+      증명된 J-Curve.
+    </h2>
+    <p class="section-lead reveal">
+      서울 핵심 상권 5개 매장, 2025년 기준 매출 95억 원. 검증된 성장 곡선을
+      이미 확보한 브랜드의 다음 스테이지에 함께합니다.
+    </p>
+
+    <div class="track-grid">
+      <div class="track-item reveal">
+        <div class="num display">95<span class="unit">억</span></div>
+        <div class="label">2025년 매출 (4분기 12.9억, 역대 최고)</div>
+      </div>
+      <div class="track-item reveal">
+        <div class="num display">5<span class="unit">개</span></div>
+        <div class="label">서울 핵심 상권 운영 매장 (4/5 KPI 초과 달성)</div>
+      </div>
+      <div class="track-item reveal">
+        <div class="num display">370<span class="unit">%+</span></div>
+        <div class="label">3년 누적 성장률 (CAGR 95%)</div>
+      </div>
+      <div class="track-item reveal">
+        <div class="num display">8.5<span class="unit">만</span></div>
+        <div class="label">평균 객단가 (Average Ticket)</div>
+      </div>
+    </div>
+
+    <div class="track-history reveal">
+      <h4>BRAND HISTORY</h4>
+      <div class="timeline">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-event">1호점 동대문두타점 오픈</div>
+        <div class="timeline-year">2023</div>
+        <div class="timeline-event">청계천삼일빌딩점·도산대로점 오픈, MBC 전지적참견시점 출연</div>
+        <div class="timeline-year">2024</div>
+        <div class="timeline-event">여의도점·합정점 오픈, 매출 80억 달성</div>
+        <div class="timeline-year">2025</div>
+        <div class="timeline-event">미국 법인 설립, 매출 95억 달성</div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-event">상암MBC점 오픈, 국내 4개 매장 추가 오픈 예정 / 미국 뉴욕점 오픈 / 예상 매출 160억+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="program" id="program">
+  <div class="container">
+    <div class="section-tag reveal">PROGRAM</div>
+    <h2 class="section-title reveal">2시간, <span class="accent">네 개의 호흡.</span></h2>
+    <p class="section-lead reveal program-intro">
+      Welcome → Story → Logic → Decision의 흐름. 각 세션은 독립적으로 완결되되,
+      누적될 때 투자 결심에 도달합니다. <strong style="color: var(--ink);">5/28(목), 5/29(금) 양일 동일 진행 — 저녁 19:00 시작.</strong>
+    </p>
+
+    <div class="program-timeline">
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">19:00</div>
+          <div class="time-dur">+30 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Welcome · 핵심 장치</div>
+          <h3>탭 충전, 자유로운 와인 경험</h3>
+          <p class="t-presenter">— 운영: 알파랩 · 탭샵바 공동</p>
+          <p class="t-desc">
+            입장과 동시에 명단 체크, 탭 크레딧 충전. 설명 없이 자연스럽게 매장을 경험합니다.
+            스낵 동시 제공. 매장이 이미 잘 되는 느낌이 첫 인상의 80%를 결정합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">19:30</div>
+          <div class="time-dur">5 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Opening</div>
+          <h3>짧고 강하게.</h3>
+          <p class="t-presenter">— 진행: 사회자</p>
+          <p class="t-desc">
+            "오늘은 투자 설명회라기보다, 실제 브랜드를 직접 경험하고 판단하시는 자리입니다."
+            5분을 넘기지 않습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">19:35</div>
+          <div class="time-dur">25 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Session 01 · Story</div>
+          <h3>3년 만에 100억, 어떻게 가능했는가.</h3>
+          <p class="t-presenter">— 발표: 나기정 대표 (Tap Shop Bar)</p>
+          <p class="t-desc">
+            와인주막차차에서 탭샵바로 이어지는 브랜드 진화. TAP + SHOP + BAR 모델이
+            어떻게 고객을 끌어오고, 왜 다시 오게 만드는지. 감과 스토리의 영역입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">20:00</div>
+          <div class="time-dur">25 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Session 02 · Logic</div>
+          <h3>왜 지금 F&amp;B, 와인, AI인가.</h3>
+          <p class="t-presenter">— 발표: 장분도 이사 · CSO (Tap Shop Bar)</p>
+          <p class="t-desc">
+            이 세션이 투자자의 "납득"을 만듭니다. 거시경제 → 와인 시장 변화 → 매장 KPI
+            → AI/데이터 → 결론으로 흐릅니다. 감이 아니라 논리의 영역입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">20:25</div>
+          <div class="time-dur">25 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Special · Decision</div>
+          <h3>알파랩은 왜 F&amp;B에 투자하는가.</h3>
+          <p class="t-presenter">— 발표: 방수준 대표 (alpha.lab)</p>
+          <p class="t-desc">
+            "결심"의 단계. F&amp;B 투자에 대한 오해를 깨고, 알파랩의 투자 방식과
+            개인투자조합 구조의 절세 효과를 설명합니다. 마지막 라운드의 urgency를 과장 없이 전달합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-row reveal">
+        <div class="t-time">
+          <div class="time-num display">20:50</div>
+          <div class="time-dur">10 MIN</div>
+        </div>
+        <div class="t-rule"></div>
+        <div class="t-body">
+          <div class="t-meta">Networking</div>
+          <h3>자유 Q&amp;A · 개별 상담</h3>
+          <p class="t-presenter">— 운영: 알파랩 + 탭샵바 + 어드바이저</p>
+          <p class="t-desc">
+            현장에서 즉시 의향을 확인하는 단계. 1:1 상담과 QR 기반 follow-up.
+            결심을 행동으로 전환하는 마지막 장치입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-end reveal">
+        <span class="end-time mono">21:00 ~</span>
+        <span class="end-label">CLOSING · 자유 네트워킹</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT OPPORTUNITY -->
+<section class="invest" id="invest">
+  <div class="container">
+    <div class="section-tag reveal" style="justify-content: center;">INVESTMENT OPPORTUNITY</div>
+    <div class="invest-headline reveal">
+      <h2 class="section-title">
+        이미 <span class="accent">12억</span>이 모였습니다.<br>
+        남은 라운드, 함께하시겠습니까?
+      </h2>
+      <p class="section-lead" style="margin: 24px auto 0;">
+        탭샵바 × 알파랩 개인투자조합 — 검증된 5개 매장의 캐시플로우와
+        2026 신규 7개 매장 확장을 기반으로 한 안정적 성장 구조.
+      </p>
+    </div>
+
+    <div class="invest-numbers">
+      <div class="invest-num reveal">
+        <div class="figure display">22<span class="unit">억</span></div>
+        <div class="label">목표 조합 규모</div>
+      </div>
+      <div class="invest-num reveal highlight">
+        <div class="figure display">12<span class="unit">억</span></div>
+        <div class="label">현재 모집 완료</div>
+      </div>
+      <div class="invest-num reveal">
+        <div class="figure display">10<span class="unit">억</span></div>
+        <div class="label">잔여 모집 라운드</div>
+      </div>
+      <div class="invest-num reveal">
+        <div class="figure display">1,000<span class="unit">만</span></div>
+        <div class="label">1구좌 단위 (원)</div>
+      </div>
+    </div>
+
+    <div class="invest-progress reveal">
+      <div class="invest-progress-header">
+        <span class="title">FUNDING PROGRESS</span>
+        <span class="pct" id="pctNum">54.5%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="invest-progress-detail">
+        <span><strong>12억</strong> 모집 완료</span>
+        <span>목표 <strong>22억</strong></span>
+      </div>
+    </div>
+
+    <div class="invest-terms reveal">
+      <div class="invest-term">
+        <div class="label">MIN. INVESTMENT</div>
+        <div class="value"><span class="accent">1,000</span>만원~</div>
+      </div>
+      <div class="invest-term">
+        <div class="label">STRUCTURE</div>
+        <div class="value">개인투자조합</div>
+      </div>
+      <div class="invest-term">
+        <div class="label">USE OF PROCEEDS</div>
+        <div class="value">신규 매장 7개 확장</div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 13px; color: var(--ink-faint); max-width: 720px; margin-left: auto; margin-right: auto;">
+      ※ 본 페이지의 정보는 세미나 안내를 위한 일반 정보이며, 투자 권유가 아닙니다.
+      자세한 조합 조건과 위험 고지는 세미나 현장 또는 별도 자료를 통해 안내됩니다.
+    </p>
+  </div>
+</section>
+
+<!-- DETAILS / SCHEDULE -->
+<section class="details" id="details">
+  <div class="container">
+    <div class="section-tag reveal">DETAILS</div>
+    <h2 class="section-title reveal">행사 안내</h2>
+
+    <div class="details-grid">
+      <div class="detail-block reveal">
+        <h4>SCHEDULE</h4>
+        <div class="schedule-row">
+          <div class="day">5/28<span class="sub">THU</span></div>
+          <div class="info">
+            <div><span class="session-tag">EVENING</span><span class="time">19:00 — 21:00</span></div>
+            <p>Welcome → Story → Logic → Decision (총 6개 세션 / 120분) / 25명 한정</p>
+            <p style="margin-top: 6px; color: var(--ink-faint); font-size: 12px;">21:00 이후 자유 네트워킹 (선택)</p>
+          </div>
+        </div>
+        <div class="schedule-row">
+          <div class="day">5/29<span class="sub">FRI</span></div>
+          <div class="info">
+            <div><span class="session-tag">EVENING</span><span class="time">19:00 — 21:00</span></div>
+            <p>양일 동일 프로그램 / 25명 한정</p>
+            <p style="margin-top: 6px; color: var(--ink-faint); font-size: 12px;">21:00 이후 자유 네트워킹 (선택)</p>
+          </div>
+        </div>
+        <p style="margin-top: 24px; font-size: 13px; color: var(--ink-faint);">
+          ※ 두 날짜 중 편하신 일자를 선택해 신청해주세요. 동일 프로그램으로 진행됩니다.<br>
+          ※ 19:00 정시 도착 권장 (Welcome 세션부터 핵심 경험이 시작됩니다)
+        </p>
+      </div>
+
+      <div class="detail-block reveal">
+        <h4>VENUE</h4>
+        <div class="venue-info">
+          <p class="name">탭샵바 도산대로점</p>
+          <p class="addr">서울 강남구 도산대로 150, 3층</p>
+          <p style="margin-top: 12px; font-size: 13px;">강남 핫플레이스 / 146평 / 100석</p>
+        </div>
+        <a href="https://map.naver.com/p/search/탭샵바%20도산대로점" target="_blank" rel="noopener" class="venue-map" aria-label="탭샵바 도산대로점 위치 - 네이버 지도에서 보기">
+          <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              </pattern>
+              <radialGradient id="mapbg" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#1f1f1f"/>
+                <stop offset="100%" stop-color="#0a0a0a"/>
+              </radialGradient>
+              <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f5b800" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#f5b800" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="800" height="500" fill="url(#mapbg)"/>
+            <rect width="800" height="500" fill="url(#grid)"/>
+            <line x1="0" y1="270" x2="800" y2="270" stroke="rgba(255,255,255,0.18)" stroke-width="36"/>
+            <line x1="0" y1="270" x2="800" y2="270" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="14 14"/>
+            <line x1="320" y1="0" x2="320" y2="500" stroke="rgba(255,255,255,0.12)" stroke-width="22"/>
+            <line x1="0" y1="120" x2="800" y2="120" stroke="rgba(255,255,255,0.06)" stroke-width="8"/>
+            <line x1="0" y1="400" x2="800" y2="400" stroke="rgba(255,255,255,0.06)" stroke-width="8"/>
+            <line x1="540" y1="0" x2="540" y2="500" stroke="rgba(255,255,255,0.06)" stroke-width="8"/>
+            <line x1="120" y1="0" x2="120" y2="500" stroke="rgba(255,255,255,0.06)" stroke-width="8"/>
+            <text x="780" y="265" text-anchor="end" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="11" letter-spacing="1.5">도산대로</text>
+            <text x="324" y="20" text-anchor="start" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10" letter-spacing="1">가로수길</text>
+            <circle cx="80" cy="270" r="6" fill="rgba(255,255,255,0.5)"/>
+            <text x="80" y="295" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="11" font-weight="500">신사역</text>
+            <text x="80" y="310" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">3호선</text>
+            <circle cx="720" cy="270" r="5" fill="rgba(255,255,255,0.35)"/>
+            <text x="720" y="295" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">압구정</text>
+            <line x1="100" y1="250" x2="430" y2="250" stroke="#f5b800" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+            <text x="265" y="240" text-anchor="middle" fill="#f5b800" font-family="monospace" font-size="10" letter-spacing="0.5">도보 10분</text>
+            <circle cx="450" cy="270" r="60" fill="url(#pulse)">
+              <animate attributeName="r" values="40;70;40" dur="2.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="450" cy="270" r="14" fill="#f5b800" stroke="#0a0a0a" stroke-width="3"/>
+            <circle cx="450" cy="270" r="5" fill="#0a0a0a"/>
+            <rect x="370" y="190" width="160" height="50" rx="4" fill="#0a0a0a" stroke="#f5b800" stroke-width="1.5"/>
+            <text x="450" y="212" text-anchor="middle" fill="#f5b800" font-family="'Bebas Neue', sans-serif" font-size="16" letter-spacing="1.5">TSB 도산대로점</text>
+            <text x="450" y="230" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="9">도산대로 150, 3F</text>
+            <line x1="450" y1="240" x2="450" y2="256" stroke="#f5b800" stroke-width="1.5"/>
+            <g stroke="rgba(245,184,0,0.4)" stroke-width="1.5" fill="none">
+              <path d="M 16 16 L 40 16 M 16 16 L 16 40"/>
+              <path d="M 784 16 L 760 16 M 784 16 L 784 40"/>
+              <path d="M 16 484 L 40 484 M 16 484 L 16 460"/>
+              <path d="M 784 484 L 760 484 M 784 484 L 784 460"/>
+            </g>
+            <text x="32" y="50" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="9" letter-spacing="2">SEOUL · GANGNAM</text>
+            <text x="32" y="68" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9" letter-spacing="1">37.5235°N · 127.0345°E</text>
+          </svg>
+          <span class="map-overlay-cta">📍 지도에서 자세히 보기</span>
+        </a>
+        <p style="margin-top: 12px; font-size: 12px; color: var(--ink-faint);">
+          🚇 신사역에서 도보 10분 / 가로수길 도산대로 변
+        </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 14px;">
+          <a href="https://map.naver.com/p/search/탭샵바%20도산대로점" target="_blank" rel="noopener" class="venue-map-link">
+            네이버 지도 길찾기 ↗
+          </a>
+          <a href="https://map.kakao.com/?q=탭샵바%20도산대로점" target="_blank" rel="noopener" class="venue-map-link">
+            카카오맵 길찾기 ↗
+          </a>
+        </div>
+
+        <h4 style="margin-top: 36px;">TARGET</h4>
+        <ul class="audience-list">
+          <li>외식업 투자에 관심 있는 분</li>
+          <li>외식 브랜드에 투자받고 싶은 분</li>
+          <li>F&amp;B 대표자 및 실무자</li>
+          <li>투자와 성장을 함께 고민하는 분</li>
+        </ul>
+
+        <h4 style="margin-top: 36px;">BENEFIT</h4>
+        <p style="color: var(--ink-muted); font-size: 14px;">
+          <strong style="color: var(--accent);">참여 혜택</strong> — 탭샵바 2만원 상품권 증정<br>
+          <span style="font-size: 12px; color: var(--ink-faint);">※ 세미나 후 탭샵바 매장에서 바로 사용 가능</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="apply" id="apply">
+  <div class="container">
+    <div class="section-tag reveal" style="justify-content: center;">APPLY</div>
+    <div class="apply-headline reveal">
+      <h2 class="section-title">
+        외식 투자와 브랜드 성장이<br>
+        <span class="accent">실제로 연결되는 현장.</span>
+      </h2>
+      <p class="section-lead" style="margin: 24px auto 0;">
+        5/28(목) 또는 5/29(금) 중 편하신 일자를 선택해 신청해주세요. 양일 모두 저녁 19:00 시작, 좌석은 선착순 마감됩니다.
+      </p>
+    </div>
+
+    <div class="apply-form-wrap reveal">
+      <!-- 구글폼 임베드 -->
+      <!-- ⚠️ 현재 URL은 4/30 행사용 폼이며, 5/28-29 새 폼 URL로 교체 필요 -->
+      <noscript>
+        <p style="color: var(--ink-muted); margin-bottom: 20px;">
+          자바스크립트가 비활성화되어 있어 폼을 표시할 수 없습니다.
+          아래 링크를 클릭하여 신청해주세요.
+        </p>
+      </noscript>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScG2O1aKRyR6aGN2jr_JPD1FwQzDGDOVWI3jFc0huJ5djcG_w/viewform?embedded=true"
+        width="100%"
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="TSB THE NEXT 신청 폼">
+        로드 중…
+      </iframe>
+
+      <p class="apply-alt">
+        <strong style="color: var(--ink);">폼이 안 보이시나요?</strong><br>
+        새 창에서 직접 신청 →
+        <a href="https://forms.gle/JB5SArYaWfbSBgQR8" target="_blank" rel="noopener">forms.gle/JB5SArYaWfbSBgQR8 ↗</a>
+      </p>
+      <p class="apply-alt" style="margin-top: 12px;">
+        문의가 필요하시면 →<br>
+        ☎ <a href="tel:01088671595">010-8867-1595</a> (알파랩 김대영 팀장)<br>
+        ✉ <a href="mailto:hello@tsb.wine">hello@tsb.wine</a> · <a href="mailto:alpha-lab@naver.com">alpha-lab@naver.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-org">
+        <h5>HOSTED BY</h5>
+        <div class="footer-org-name">알파랩 (alpha.lab)</div>
+        <p>국내 최초 휴미락 액셀러레이터</p>
+        <p>대표 방수준</p>
+        <p>서울 양천구 화곡로 47, 3층 301-A</p>
+        <p><a href="mailto:alpha-lab@naver.com">alpha-lab@naver.com</a> · 02-2608-4289</p>
+        <p style="margin-top: 4px;">행사 문의: <a href="tel:01088671595">010-8867-1595</a> (김대영 팀장)</p>
+        <p style="margin-top: 8px;"><a href="https://alphalabs.co.kr" target="_blank">alphalabs.co.kr ↗</a></p>
+      </div>
+      <div class="footer-org">
+        <h5>BRAND</h5>
+        <div class="footer-org-name">탭샵바 (TSB)</div>
+        <p>Wine is Second Americano</p>
+        <p>대표 나기정</p>
+        <p>서울 강남구 도산대로 150, 3층 (도산대로점)</p>
+        <p><a href="mailto:hello@tsb.wine">hello@tsb.wine</a></p>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      ※ 본 웹페이지는 알파랩과 탭샵바가 공동 주최하는 비즈니스 세미나 및 사업 참여 설명회의
+      안내를 목적으로 제작되었습니다. 페이지에 기재된 매출, 매장 현황, 향후 계획 등은
+      탭샵바가 제공한 자료를 기반으로 하며, 향후 시장 상황에 따라 변동될 수 있습니다.
+      본 페이지는 자본시장과 금융투자업에 관한 법률에 따른 투자 권유가 아니며,
+      개인투자조합의 구체적 조건과 위험은 세미나 현장 또는 별도 자료를 통해 안내됩니다.
+      투자 결정 전 반드시 충분한 검토와 본인 판단이 필요합니다.
+    </p>
+
+    <div class="footer-bottom">
+      <span>© 2026 alpha.lab × TSB. All rights reserved.</span>
+      <span>TSB THE NEXT / 2026.05.28 — 05.29</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="#apply" class="floating-cta" id="floatingCta">
+  세미나 신청
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+</a>
+
+<script>
+  // ============ COUNTDOWN ============
+  // 행사 시작: 2026년 5월 28일 19:00 (KST) — 첫째 날 저녁 Welcome
+  const TARGET = new Date('2026-05-28T19:00:00+09:00').getTime();
+  const cd = {
+    days: document.getElementById('cdDays'),
+    hours: document.getElementById('cdHours'),
+    minutes: document.getElementById('cdMinutes'),
+    seconds: document.getElementById('cdSeconds'),
+    box: document.getElementById('countdown'),
+  };
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    const now = Date.now();
+    const diff = TARGET - now;
+    if (diff <= 0) {
+      cd.box.innerHTML = '<span class="countdown-finished">▸ 행사가 시작되었습니다</span>';
+      return false;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+    cd.days.textContent = pad(days);
+    cd.hours.textContent = pad(hours);
+    cd.minutes.textContent = pad(minutes);
+    cd.seconds.textContent = pad(seconds);
+    return true;
+  }
+  if (cd.days) {
+    tick();
+    const cdInterval = setInterval(() => {
+      if (!tick()) clearInterval(cdInterval);
+    }, 1000);
+  }
+
+  // ============ REVEAL ON SCROLL ============
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Progress bar animation
+  const progressFill = document.getElementById('progressFill');
+  const progressObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        progressFill.style.width = '54.5%';
+        progressObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  if (progressFill) progressObserver.observe(progressFill);
+
+  // Floating CTA
+  const floatingCta = document.getElementById('floatingCta');
+  const heroSection = document.querySelector('.hero');
+  const applySection = document.getElementById('apply');
+
+  window.addEventListener('scroll', () => {
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const applyTop = applySection.offsetTop;
+    const scrollY = window.scrollY + window.innerHeight * 0.5;
+
+    if (scrollY > heroBottom && scrollY < applyTop) {
+      floatingCta.classList.add('visible');
+    } else {
+      floatingCta.classList.remove('visible');
+    }
+  });
+</script>
+
+</body>
+</html>
